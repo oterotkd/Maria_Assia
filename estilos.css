@@ -1,0 +1,168 @@
+/* CSS */
+
+/*Enlace de Presentacion Persona*/
+.Explrora{
+       background-color:#8B5843; /* Color de fondo personalizado */
+    color:white;/* Color del texto del botón */
+    width: 15rem;
+    border-radius: 3rem;
+   
+}
+.Explrora:hover{
+    background-color: #DEC4A4;
+    color:#8B5843;
+    border: 1px solid #8B5843; /* Borde del botón con el mismo color de fondo */     
+}
+/*Enalace Sobre Mi*/
+.SobreMi{
+    background-color: #DEC4A4;
+    border-radius: 30px;
+    color:#8B5843;
+    width: 15rem;
+}
+.SobreMi:hover{
+    background-color:#8B5843;
+    border-radius: 30px;
+    color: white;
+}
+
+/*Boton de Contact Me*/
+.btn-custom {
+    background-color: #8B5843; /* Color de fondo personalizado */
+    color: white; /* Color del texto del botón */
+    border: 1px solid #8B5843; /* Borde del botón con el mismo color de fondo */
+    border-radius: 3rem;
+}
+
+.btn-custom:hover {
+    background-color: #DEC4A4;; /* Un color más oscuro para el efecto hover */
+    border: 1px solid #7a4b38; /* Borde del botón con el color hover */
+    color: #7a4b38;
+}
+/*Footer*/
+footer{
+    background-color: rgba(139, 88, 67, 0.37);
+    padding: 1rem; /* Espaciado alrededor del contenido del pie de página */
+   text-align: center;
+}
+
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 2rem; /* Espacio entre los elementos */
+}
+
+.footer-content i {
+    font-size: 2rem; /* Tamaño de los íconos (ajusta según sea necesario) */
+    color: #333; /* Color de los íconos (ajusta según sea necesario) */
+}
+
+.footer-content h2 {
+    margin: 0; /* Elimina el margen alrededor del texto */
+    font-size: 2rem; /* Tamaño del texto (ajusta según sea necesario) */
+    color: #333; /* Color del texto (ajusta según sea necesario) */
+}
+
+/* Responsividad */
+
+/* Tablet (≥768px) y menos de 992px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Ajuste de tamaño del logo en la barra de navegación */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    /* Ajuste de márgenes de los elementos de navegación */
+    .navbar-nav .nav-item {
+        margin: 0 0.5rem;
+    }
+    
+    /* Ajuste de tamaño de los botones en tabletas */
+    .Explrora, .SobreMi {
+        width: 12rem;
+    }
+
+    /* Ajuste de tamaño de los íconos y texto en el pie de página */
+    .footer-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Móvil (menos de 768px) */
+@media (max-width: 767px) {
+    /* Ajuste de la alineación de los elementos de navegación para móvil */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Ajuste de márgenes de los elementos de navegación en móvil */
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    /* Ajuste de tamaño de los botones en móviles */
+    .Explrora, .SobreMi {
+        width: 10rem;
+    }
+
+    /* Ajuste de la disposición y tamaño de elementos en el pie de página */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-content i {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste de márgenes de columnas en móviles */
+    .col-md-6 {
+        margin-bottom: 1rem;
+    }
+
+    /* Botones ocupan todo el ancho en móviles */
+    .btn-custom, .Explrora, .SobreMi {
+        width: 100%;
+    }
+}
+
+/* Código para los carruseles */
+.carousel-item img {
+    width:100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    margin-top: 1rem; /* Ajuste del margen superior */
+    border-radius: 1rem; /* Bordes redondeados */
+    
+}
+
+/* Estilos específicos para pantallas grandes (computadoras de escritorio) */
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 600px; /* Altura fija para pantallas grandes */
+    }
+}
+
+/* Estilos específicos para pantallas medianas (tablets) */
+@media (min-width:700px) and (max-width: 991px) {
+    .carousel-item img {
+        height: 400px; /* Altura menor para tablets */
+    }
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 700px) {
+    .carousel-item img {
+        height: 500px; /* Altura menor para móviles */
+       
+    }
+}
